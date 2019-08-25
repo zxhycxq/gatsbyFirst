@@ -19,6 +19,10 @@
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1"
   },
+  "scripts":{
+  	"deploy": "gatsby build --prefix-paths",
+  	"build":"gh-pages -d build"
+  },
   "devDependencies": {
     "prettier": "^1.18.2"
   },
