@@ -7,6 +7,8 @@
   "dependencies": {
     "gatsby": "^2.13.73",
     "gatsby-image": "^2.2.10",
+    "gatsby-plugin-baidu-tongji": "1.1.0",
+    "gatsby-plugin-google-analytics": "2.1.12",
     "gatsby-plugin-manifest": "^2.2.6",
     "gatsby-plugin-offline": "^2.2.7",
     "gatsby-plugin-react-helmet": "^3.1.4",
@@ -23,7 +25,8 @@
     "prettier": "^1.18.2"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "blog"
   ],
   "license": "MIT",
   "scripts": {
