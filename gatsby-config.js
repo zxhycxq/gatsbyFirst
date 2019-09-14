@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `大城子的博客`,
+    description: `个人博客-前端开发`,
+    author: `@江湖人称向前兄`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -14,6 +14,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    "gatsby-mdx",
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -62,6 +63,21 @@ module.exports = {
         cookieDomain: "example.com",
       },
     },
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [{
+          resolve: 'gatsby-remark-highlights',
+          options: {
+            additionalLangs: ['language-rust'],
+            scopePrefix: 'syntax--',
+            codeWrap: {
+              className: 'midnight'
+            }
+          }
+        }]
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
